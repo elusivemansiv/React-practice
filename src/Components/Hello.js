@@ -3,24 +3,34 @@ import Footer from './Footer';
 import Top from './Top';
 import Product from './Product';
 import Click from './Click';
+import Index from './Index';
+import Profile from './Profile';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const Hello = () => {
     return (
 
         <
         div className = "Home" >
-        <
-        Top / >
+
         <
         header className = "Home-header" >
+        <
+        Router >
+        <
+        Top / >
 
         <
-        h1 > Wellcome to react < /h1>
-
+        Switch >
+        <
+        Route exact path = "/" > < Index / > < /Route>
 
         <
-        h2 > Let 's Roll Boiss</h2>  <
-        h3 > Pendejo < /h3>  <
+        Route exact path = "/profile" > < Profile / > < /Route>
+
+        <
+        Route exact path = "/product" >
+        <
         Product name = "BMW"
         price = "1200k" / >
         <
@@ -32,10 +42,22 @@ const Hello = () => {
         <
         br / >
         <
-        Click count = "1" > < /Click>
+        Click count = "1" > < /Click> <
+        /Route>
 
         <
+        /Switch> <
         Footer / >
+        <
+        /Router>
+
+
+
+
+
+
+
+
         <
         /header> 
 

@@ -1,14 +1,14 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 
 const Top = () => {
     return ( <
         div className = "Top" >
 
         <
-        a href = "" > Home < /a>&nbsp;&nbsp; <
-        a href = "" > Profile < /a>&nbsp;&nbsp; <
-        a href = "" > Contact < /a>&nbsp;&nbsp;
+        Link to = "/" > Index < /Link>&nbsp;&nbsp; <
+        Link to = "/profile" > Profile < /Link>&nbsp;&nbsp; <
+        Link to = "/product" > Product < /Link>&nbsp;&nbsp;
 
         <
         /div> 

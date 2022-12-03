@@ -1,9 +1,12 @@
 import React from 'react'
 
 const Product = (props) => {
-    return ( <
-        div >
+    return (
 
+        <
+        div >
+        <
+        br / >
         Name: { props.name } <
         br / >
         Price: { props.price }
