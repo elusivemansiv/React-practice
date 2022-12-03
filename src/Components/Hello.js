@@ -2,31 +2,45 @@ import React from 'react'
 import Footer from './Footer';
 import Top from './Top';
 import Product from './Product';
+import Click from './Click';
 
-function Hello() {
+const Hello = () => {
     return (
 
-        <div className = "Home" >
-        <Top/>
-        <header className = "Home-header" >
+        <
+        div className = "Home" >
+        <
+        Top / >
+        <
+        header className = "Home-header" >
 
-        <h1>Wellcome to react </h1>
+        <
+        h1 > Wellcome to react < /h1>
 
-        <h3 > dear 123 s m shahriar </h3>
 
-        <h2 > Let 's Roll Boiss</h2> 
-        <h3 > Pendejo </h3> 
-        <Product name = "BMW" price = "1200k" / >
-        <Product name = "Mercedes" price = "1100k" / >
+        <
+        h2 > Let 's Roll Boiss</h2>  <
+        h3 > Pendejo < /h3>  <
+        Product name = "BMW"
+        price = "1200k" / >
+        <
+        Product name = "Mercedes"
+        price = "1100k" / >
+        <
+        Product name = "Toyota"
+        price = "1000k" / >
+        <
+        br / >
+        <
+        Click count = "1" > < /Click>
 
-        <a className = "App-link"
-        href = "https://reactjs.org"
-        target = "_blank"
-        rel = "noopener noreferrer" >
-        This is New App </a> <
+        <
         Footer / >
-        </header> 
-        </div>
+        <
+        /header> 
+
+        <
+        /div>
 
 
     );

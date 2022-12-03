@@ -1,14 +1,17 @@
 import React from 'react'
 
-function Top (){
-    return(
-      <div className="Top">
-         
-        <a href=""> Home</a>
-        <a href="">Profile</a>
-        <a href="">Contact</a>
 
-      </div> 
+const Top = () => {
+    return ( <
+        div className = "Top" >
+
+        <
+        a href = "" > Home < /a>&nbsp;&nbsp; <
+        a href = "" > Profile < /a>&nbsp;&nbsp; <
+        a href = "" > Contact < /a>&nbsp;&nbsp;
+
+        <
+        /div> 
     )
 }
 export default Top;
