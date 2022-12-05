@@ -1,4 +1,7 @@
 import React from 'react'
+import { Table } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 const Product = (props) => {
     return (
@@ -7,9 +10,36 @@ const Product = (props) => {
         div >
         <
         br / >
-        Name: { props.name } <
-        br / >
-        Price: { props.price }
+        <
+        Table striped bordered hover >
+        <
+        thead >
+        <
+        tr >
+
+        <
+        th > Product Name < /th> <
+        th > Product Price < /th> <
+        /tr> <
+        /thead> <
+        tbody >
+        <
+        tr >
+
+        <
+        td > { props.name } < /td> <
+        td > { props.price } < /td>
+
+        <
+        /tr>
+
+
+        <
+        /tbody>
+
+
+        <
+        /Table>
 
         <
         /div>
